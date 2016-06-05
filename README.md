@@ -11,6 +11,10 @@ iOS 8 [UIBlurEffect](https://developer.apple.com/library/ios/documentation/UIKit
 
 ## Install
 
+```
+cordova plugin add cordova-plugin-blurred-snapshot
+```
+
 ### Locally
 
 ```
