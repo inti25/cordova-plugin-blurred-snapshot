@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-blurred-snapshot" version="0.1.0" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>cordova-plugin-blurred-snapshot</name>
+    <author>Yury Trykov (http://trykov.ru/)</author>
+    <description>Cordova Plugin for blurring app when it will resign active and removes it when app did become active.</description>
+    <keywords>cordova, ios, blurred, blur, snapshot</keywords>
+    <license>MIT</license>
+    <repo>https://github.com/trykovyura/cordova-plugin-blurred-snapshot</repo>
+    <issue>https://github.com/trykovyura/cordova-plugin-blurred-snapshot/issues</issue>
+    <engines>
+        <engine name="cordova" version="&gt;=3.0.0"/>
+    </engines>
+    <js-module name="cordova-plugin-blurred-snapshot" src="www/blurredsnapshot.js">
+        <clobbers target="blurredsnapshot"/>
+    </js-module>
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="cordova-plugin-blurred-snapshot">
+                <param name="ios-package" value="BlurredSnapshot"/>
+            </feature>
+        </config-file>
+        <source-file src="src/ios/BlurredSnapshot.m"/>
+        <source-file src="src/ios/UIImage+ImageEffects.h"/>
+        <source-file src="src/ios/UIImage+ImageEffects.m"/>
+        <source-file src="src/ios/UIView+blur.h"/>
+        <source-file src="src/ios/UIView+blur.m"/>
+    </platform>
+</plugin>
