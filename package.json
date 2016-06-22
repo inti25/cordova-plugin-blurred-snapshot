@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-blurred-snapshot",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Cordova Plugin for blurring app when it will resign active and removes it when app did become active.",
   "cordova": {
     "id": "cordova-plugin-blurred-snapshot",
@@ -24,7 +24,7 @@
   "engines": [
     {
       "name": "cordova",
-      "version": ">=3.0.0"
+      "version": ">=4.0.0"
     }
   ],
   "author": "Yury Trykov",
