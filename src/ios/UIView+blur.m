@@ -46,6 +46,10 @@ static int BLUR_VIEW_TAG = 1234;
  * Add Snapshot of current UIView with burred effect for window
  */
 -(void)addBlurredSnapshot {
+    UIView *currentSnapshot = [self viewWithTag:BLUR_VIEW_TAG];
+    if (currentSnapshot) {
+        return;
+    }
     UIImageView *blurredSnapshot = [[UIImageView alloc] initWithImage:[self blurredSnapshot]];
     blurredSnapshot.tag = BLUR_VIEW_TAG;
     blurredSnapshot.bounds = self.bounds;
