@@ -9,7 +9,7 @@
     <issue>https://github.com/trykovyura/cordova-plugin-blurred-snapshot/issues</issue>
     <engines>
         <engine name="cordova" version="&gt;=3.0.0"/>
-        <engine name="cordova-ios" version="&gt;=4.0.0" />
+        <engine name="cordova-ios" version="&gt;=3.9.0" />
     </engines>
     <js-module name="cordova-plugin-blurred-snapshot" src="www/blurredsnapshot.js">
         <clobbers target="blurredsnapshot"/>

@@ -17,8 +17,7 @@
 
     CDVPluginResult* pluginResult = nil;
 
-    if ([self appDelegate] != nil && [[self appDelegate] isKindOfClass:[CDVAppDelegate class]]) {
-        [((CDVAppDelegate *)[self appDelegate]).window addBlurredSnapshot];
+    if (self.viewController) { [self.viewController.view addBlurredSnapshot];
         pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
     } else {
         pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR];
@@ -31,8 +30,7 @@
 
     CDVPluginResult* pluginResult = nil;
 
-    if ([self appDelegate] != nil && [[self appDelegate] isKindOfClass:[CDVAppDelegate class]]) {
-        [((CDVAppDelegate *)[self appDelegate]).window removeBlurredSnapshot];
+    if (self.viewController) { [self.viewController.view removeBlurredSnapshot];
         pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
     } else {
         pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR];
