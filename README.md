@@ -10,7 +10,7 @@ iOS 8 [UIBlurEffect](https://developer.apple.com/library/ios/documentation/UIKit
 ![](https://github.com/trykovyura/cordova-plugin-blurred-snapshot/blob/master/blurredScreenShot.png)
 
 ## Install
-cordova-ios platform >= 4.0.0
+cordova-ios platform >= 3.9.0
 
 ```
 cordova plugin add cordova-plugin-blurred-snapshot
